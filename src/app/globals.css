@@ -3703,3 +3703,708 @@ html {
     font-size: 60px;
   }
 }
+
+/* ===================================
+   MOBILE RESPONSIVE OPTIMIZATIONS
+   =================================== */
+
+/* Base Typography Mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 32px !important;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 28px !important;
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: 22px !important;
+    line-height: 1.3;
+  }
+  
+  h4 {
+    font-size: 18px !important;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* Container Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
+  }
+}
+
+/* Navigation Mobile */
+@media (max-width: 968px) {
+  .navigation {
+    padding: 12px 0;
+  }
+  
+  .nav-container {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .nav-links {
+    order: 3;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+    display: none; /* Hidden by default on mobile */
+  }
+  
+  .nav-links.mobile-open {
+    display: flex;
+  }
+  
+  .nav-link {
+    padding: 12px 16px;
+    width: 100%;
+    text-align: center;
+    background: rgba(26, 27, 35, 0.8);
+    border-radius: 8px;
+  }
+  
+  .nav-actions {
+    gap: 12px;
+  }
+  
+  .nav-icon-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Hero Section Mobile */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 100px 0 60px;
+  }
+  
+  .hero-content {
+    padding: 32px 20px;
+  }
+  
+  .hero-title {
+    font-size: 36px !important;
+    margin-bottom: 16px;
+  }
+  
+  .hero-subtitle {
+    font-size: 16px !important;
+    margin-bottom: 24px;
+  }
+  
+  .hero-stats {
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+  
+  .stat-number {
+    font-size: 32px !important;
+  }
+  
+  .stat-label {
+    font-size: 13px !important;
+  }
+}
+
+/* Products Grid Mobile */
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  
+  .product-card {
+    max-width: 100%;
+  }
+  
+  .product-image {
+    height: 240px !important;
+  }
+  
+  .product-name {
+    font-size: 18px !important;
+  }
+  
+  .product-description {
+    font-size: 13px !important;
+  }
+  
+  .price {
+    font-size: 22px !important;
+  }
+}
+
+/* Featured Products Mobile */
+@media (max-width: 768px) {
+  .featured-section {
+    padding: 60px 0 40px;
+  }
+  
+  .section-title {
+    font-size: 32px !important;
+  }
+  
+  .section-subtitle {
+    font-size: 15px !important;
+  }
+}
+
+/* Mission & Vision Mobile */
+@media (max-width: 768px) {
+  .mission-vision-section {
+    padding: 80px 0 60px;
+  }
+  
+  .mission-card,
+  .vision-card {
+    padding: 32px 24px;
+  }
+  
+  .icon-circle {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  
+  .icon-emoji {
+    font-size: 36px !important;
+  }
+  
+  .card-title {
+    font-size: 26px !important;
+  }
+  
+  .card-slogan {
+    font-size: 17px !important;
+  }
+  
+  .card-description {
+    font-size: 14px !important;
+  }
+  
+  .feature-item {
+    padding: 12px 16px;
+  }
+  
+  .feature-text {
+    font-size: 13px !important;
+  }
+  
+  .stat-box {
+    padding: 24px 16px;
+  }
+  
+  .stat-number {
+    font-size: 36px !important;
+  }
+  
+  .stat-label {
+    font-size: 16px !important;
+  }
+  
+  .value-card {
+    padding: 24px 16px;
+  }
+  
+  .value-icon {
+    font-size: 42px !important;
+  }
+  
+  .value-name {
+    font-size: 18px !important;
+  }
+}
+
+/* Product Detail Mobile */
+@media (max-width: 968px) {
+  .product-detail-section {
+    padding: 100px 0 40px;
+  }
+  
+  .product-detail-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px;
+  }
+  
+  .main-image-card {
+    height: 350px !important;
+  }
+  
+  .thumbnail-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  
+  .thumbnail-btn {
+    height: 70px !important;
+  }
+  
+  .price-main {
+    font-size: 32px !important;
+  }
+  
+  .size-options {
+    gap: 8px;
+  }
+  
+  .size-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .add-to-cart-btn,
+  .wishlist-btn {
+    width: 100%;
+    padding: 16px 24px;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+}
+
+/* About Page Mobile */
+@media (max-width: 768px) {
+  .company-info-section,
+  .team-section,
+  .contact-section {
+    padding: 60px 0 40px;
+  }
+  
+  .info-card {
+    padding: 32px 24px;
+  }
+  
+  .info-icon {
+    font-size: 36px !important;
+  }
+  
+  .info-title {
+    font-size: 20px !important;
+  }
+}
+
+/* Contact Page Mobile */
+@media (max-width: 768px) {
+  .contact-page-header {
+    padding: 100px 0 40px;
+  }
+  
+  .quick-contact-card {
+    padding: 24px 20px;
+  }
+  
+  .quick-icon {
+    font-size: 36px !important;
+  }
+  
+  .contact-link-large {
+    font-size: 16px !important;
+  }
+  
+  .partnership-item {
+    padding: 24px 20px;
+  }
+  
+  .partnership-icon {
+    font-size: 42px !important;
+  }
+}
+
+/* Contact Form Mobile */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 32px 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-input,
+  .form-textarea {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+  
+  .submit-btn {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+}
+
+/* Footer Mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 32px;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr !important;
+    gap: 40px;
+  }
+  
+  .footer-section {
+    text-align: center;
+  }
+  
+  .footer-logo {
+    justify-content: center;
+  }
+  
+  .footer-description {
+    font-size: 14px !important;
+  }
+  
+  .footer-stats {
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .footer-stat {
+    text-align: center;
+  }
+  
+  .footer-links {
+    text-align: center;
+  }
+  
+  .footer-contact {
+    text-align: center;
+  }
+  
+  .footer-social {
+    justify-content: center;
+  }
+  
+  .footer-partners {
+    padding: 32px 20px;
+  }
+  
+  .partner-badges {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .partner-badge {
+    font-size: 12px !important;
+    padding: 8px 16px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .footer-legal {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .footer-legal .separator {
+    display: none;
+  }
+}
+
+/* Testimonials Mobile */
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 60px 0 40px;
+  }
+  
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    padding: 24px 20px;
+  }
+  
+  .testimonial-text {
+    font-size: 14px !important;
+  }
+  
+  .testimonial-author {
+    font-size: 16px !important;
+  }
+}
+
+/* Newsletter Mobile */
+@media (max-width: 768px) {
+  .newsletter-section {
+    padding: 60px 0 40px;
+  }
+  
+  .newsletter-content {
+    padding: 40px 24px;
+  }
+  
+  .newsletter-title {
+    font-size: 26px !important;
+  }
+  
+  .newsletter-subtitle {
+    font-size: 14px !important;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .newsletter-input {
+    width: 100%;
+    padding: 14px 16px;
+  }
+  
+  .newsletter-btn {
+    width: 100%;
+    padding: 14px 24px;
+  }
+}
+
+/* Buttons Mobile */
+@media (max-width: 768px) {
+  .btn,
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  
+  .btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Stats Bar Mobile */
+@media (max-width: 768px) {
+  .stat-card {
+    padding: 20px 16px;
+  }
+  
+  .stat-card .text-4xl {
+    font-size: 32px !important;
+  }
+  
+  .stat-card .text-2xl {
+    font-size: 20px !important;
+  }
+}
+
+/* CTA Box Mobile */
+@media (max-width: 768px) {
+  .cta-box,
+  .info-banner {
+    padding: 40px 24px;
+    margin: 32px 16px;
+  }
+  
+  .cta-box h2,
+  .info-banner h2 {
+    font-size: 28px !important;
+  }
+  
+  .cta-box p,
+  .info-banner p {
+    font-size: 15px !important;
+  }
+}
+
+/* Breadcrumb Mobile */
+@media (max-width: 768px) {
+  .breadcrumb {
+    font-size: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .breadcrumb a,
+  .breadcrumb span {
+    font-size: 12px;
+  }
+}
+
+/* Modal/Overlay Mobile */
+@media (max-width: 768px) {
+  .quick-view,
+  .modal-content {
+    width: 90% !important;
+    max-width: 90% !important;
+    padding: 24px;
+  }
+}
+
+/* Spacing Utilities Mobile */
+@media (max-width: 768px) {
+  .py-16 {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+  
+  .py-20 {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+  }
+  
+  .mb-16 {
+    margin-bottom: 48px !important;
+  }
+  
+  .mb-20 {
+    margin-bottom: 60px !important;
+  }
+  
+  .gap-6 {
+    gap: 16px !important;
+  }
+  
+  .gap-8 {
+    gap: 20px !important;
+  }
+}
+
+/* Prevent Horizontal Scroll */
+@media (max-width: 768px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  
+  * {
+    max-width: 100%;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Touch Targets */
+@media (max-width: 768px) {
+  a,
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Product Cards Mobile Specific */
+@media (max-width: 480px) {
+  .product-card {
+    padding: 16px;
+  }
+  
+  .product-image-container {
+    height: 280px !important;
+  }
+  
+  .product-footer {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+
+/* Hide/Show Elements Mobile */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+  
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+  
+  .desktop-only {
+    display: block !important;
+  }
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+@media (max-width: 968px) {
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+  
+  .desktop-hidden {
+    display: flex !important;
+  }
+  
+  .mobile-menu-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Mobile Menu Animation */
+@media (max-width: 968px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(10, 11, 15, 0.98);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(16, 185, 129, 0.2);
+    padding: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .nav-links.mobile-open {
+    max-height: 400px;
+    display: flex !important;
+  }
+}
+
+/* Viewport Meta Fix */
+@media (max-width: 768px) {
+  @viewport {
+    width: device-width;
+    zoom: 1.0;
+  }
+}

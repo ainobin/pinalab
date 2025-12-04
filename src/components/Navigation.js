@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,14 +31,32 @@ export default function Navigation() {
           />
         </a>
         
-        <div className="nav-links">
-          <a href="/" className="nav-link active">Home</a>
-          <a href="/products" className="nav-link">Products</a>
-          <a href="/about" className="nav-link">About</a>
-          <a href="/contact" className="nav-link">Contact</a>
+        <div className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
+          <a href="/" className="nav-link active" onClick={() => setMobileMenuOpen(false)}>Home</a>
+          <a href="/products" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Products</a>
+          <a href="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</a>
+          <a href="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact</a>
         </div>
         
         <div className="nav-actions">
+          <button 
+            className="nav-icon-btn mobile-menu-btn desktop-hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? (
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <line x1="18" y1="6" x2="6" y2="18" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="6" y1="6" x2="18" y2="18" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+            ) : (
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <line x1="3" y1="12" x2="21" y2="12" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="3" y1="6" x2="21" y2="6" strokeWidth="2" strokeLinecap="round"/>
+                <line x1="3" y1="18" x2="21" y2="18" strokeWidth="2" strokeLinecap="round"/>
+              </svg>
+            )}
+          </button>
           <button className="nav-icon-btn">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <circle cx="10" cy="8" r="3" stroke="currentColor" strokeWidth="2"/>

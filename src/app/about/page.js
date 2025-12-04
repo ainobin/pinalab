@@ -12,7 +12,7 @@ export default function AboutPage() {
     <main className="min-h-screen bg-linear-to-br from-[#0a0b0f] via-[#121318] to-[#0a0b0f]">
       <CompanyInfo />
       <TeamMembers />
-      <ContactSection />
+      {/* <ContactSection /> */}
     </main>
   );
 }

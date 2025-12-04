@@ -16,6 +16,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "PinaLab | Sustainable Fashion from Pineapple Leaves",
   description: "Eco-friendly vegan leather and sustainable textiles made from pineapple leaves. Shop shoes, shirts, pants, and accessories that empower farmers and protect the planet.",
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
 };
 
 export default function RootLayout({ children }) {
